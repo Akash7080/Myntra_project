@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calculator">
+    
+
+     <input type="text" id="display" readonly>
+<div class="button_container">
+     <button class="calc2" onclick="cv=''; document.querySelector('#display').value=cv;">C</button>
+     <button class="calc2" onclick="cv=cv+'1'; document.querySelector('#display').value=cv;">1</button>
+     <button class="calc2"onclick="cv=cv+'2'; document.querySelector('#display').value=cv;">2</button>
+     <button class="calc2"onclick="cv=cv+'+'; document.querySelector('#display').value=cv;">+</button>
+     <button class="calc2" onclick="cv=cv+'3'; document.querySelector('#display').value=cv;">3</button>
+     <button class="calc2"onclick="cv=cv+'4'; document.querySelector('#display').value=cv;">4</button>
+     <button class="calc2"onclick="cv=cv+'-'; document.querySelector('#display').value=cv;">-</button>
+     <button class="calc2"onclick="cv=cv+'5'; document.querySelector('#display').value=cv;">5</button>
+     <button class="calc2"onclick="cv=cv+'6'; document.querySelector('#display').value=cv;">6</button>
+     <button class="calc2"onclick="cv=cv+'*'; document.querySelector('#display').value=cv;">*</button>
+     <button class="calc2" onclick="cv=cv+'7'; document.querySelector('#display').value=cv;">7</button>
+     <button class="calc2"onclick="cv=cv+'8'; document.querySelector('#display').value=cv;">8</button>
+     <button class="calc2"onclick="cv=cv+'/'; document.querySelector('#display').value=cv;">/</button>
+     <button class="calc2"onclick="cv=eval(cv); document.querySelector('#display').value=cv;">=</button>
+     <button class="calc2"onclick="cv=cv+'9'; document.querySelector('#display').value=cv;">9</button>
+     <button class="calc2"onclick="cv=cv+'0'; document.querySelector('#display').value=cv;">0</button>
+     <button class="calc2"onclick="cv=cv+'.'; document.querySelector('#display').value=cv;">.</button>
+
+    </div>
+         
+
+    </div>
+
+
+
+    <script>
+        let cv=''
+        document.querySelector('#display').value=cv;
+    </script>
+</body>
+</html>
